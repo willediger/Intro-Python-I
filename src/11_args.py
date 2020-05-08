@@ -57,7 +57,7 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 def f4(**vals):
-    for (k, v) in vals.items():
+    for k, v in vals.items():
         print(f"key: {k}, value: {v}")
 
 
