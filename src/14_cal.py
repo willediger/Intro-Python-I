@@ -32,15 +32,16 @@ import calendar
 from datetime import datetime
 
 def print_calendar():
+  today = datetime.now()
   if len(sys.argv) == 3:
     month = sys.argv[1]
     year = sys.argv[2]
   elif len(sys.argv) == 2:
     month = sys.argv[1]
-    year = datetime.now().year
+    year = today.year
   elif len(sys.argv) == 1:
-    month = datetime.now().month
-    year = datetime.now().year
+    month = today.month
+    year = today.year
   else:
     print("""The program accepts [month] [year] as inputs. 
     
